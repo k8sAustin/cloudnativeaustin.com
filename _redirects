@@ -1,0 +1,35 @@
+# Kubernetes Austin — Netlify redirects
+# Short links kept from the group's existing marketing materials & past talks.
+# Update the /event-slug entries as new talks go up on ocgroups.dev.
+
+/register         /register.html                                                       200
+/sponsor          /sponsors.html                                                        200
+/coc              /code-of-conduct.html                                                 200
+/present          https://sessionize.com/austin-kubernetes-meetup                       302
+/cfp              https://sessionize.com/austin-kubernetes-meetup                       302
+/meetup           https://www.meetup.com/kubernetes-austin                              302
+/slack            https://communityinviter.com/apps/cloud-native/cncf                   302
+/host             https://docs.google.com/forms/d/e/1FAIpQLSd7AHONXoks7J-6lK-g9aOBzKFb_MUBx7PNTNZqQVNv-t1YRw/viewform  302
+/feedback         https://hwtr04c9u6d.typeform.com/to/plP32jXt                          302
+/youtube          https://youtube.com/@k8sAustin                                        302
+/linkedin         https://linkedin.com/company/k8sAustin                                302
+/twitter          https://twitter.com/k8sAustin                                         302
+/instagram        https://instagram.com/k8sAustin                                       302
+/mastodon         https://cloud-native.social/@k8saustin                                302
+/bluesky          https://bsky.app/profile/k8saustin.com                                302
+
+# Past event pages on the CNCF Open Community Groups platform
+/cncf10           https://ocgroups.dev/cncf/group/3up7rjk/event/s6qhwr2                 302
+/opensource-llm   https://ocgroups.dev/cncf/group/3up7rjk/event/huxh3rd                 302
+/platformless     https://ocgroups.dev/cncf/group/3up7rjk/event/v7xzvra                 302
+/autoscaling      https://ocgroups.dev/cncf/group/3up7rjk/event/xe4f65f                 302
+/talos            https://ocgroups.dev/cncf/group/3up7rjk/event/emn6xzv                 302
+/managed-oss      https://ocgroups.dev/cncf/group/3up7rjk/event/ttf4zrq                 302
+/kuberTENes       https://ocgroups.dev/cncf/group/3up7rjk/event/2fc57tf                 302
+/spiffe           https://ocgroups.dev/cncf/group/3up7rjk/event/5exb25e                 302
+/monitoring-oss   https://ocgroups.dev/cncf/group/3up7rjk/event/ttf4zrq                 302
+/saas             https://ocgroups.dev/cncf/group/3up7rjk/event/kkp3bdf                 302
+/knative          https://ocgroups.dev/cncf/group/3up7rjk/event/s3u8btg                 302
+/performance      https://ocgroups.dev/cncf/group/3up7rjk/event/ycff3h8                 302
+
+/404              /404.html                                                             404
