@@ -1,6 +1,6 @@
 # cloudnativeaustin.com
 
-The website for [Kubernetes Austin](https://github.com/k8sAustin), the official CNCF Community Group for Central Texas.
+The website for [Cloud Native Austin](https://github.com/k8sAustin), the official CNCF Community Group for Central Texas.
 
 Static HTML/CSS/JS — no build step, no framework, deploys straight to Netlify.
 
@@ -26,7 +26,7 @@ python3 -m http.server 8080
 ## Design system
 
 Tokens (color, type, spacing) live in `assets/css/styles.css` and are documented in
-[`design-system/kubernetes-austin/MASTER.md`](design-system/kubernetes-austin/MASTER.md).
+[`design-system/cloud-native-austin/MASTER.md`](design-system/cloud-native-austin/MASTER.md).
 Brand color is Kubernetes blue (`#326CE5`); typography is IBM Plex Sans / JetBrains Mono.
 
 ## Deployment

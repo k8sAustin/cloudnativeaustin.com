@@ -1,6 +1,6 @@
 /*
-  Kubernetes Austin — shared stylesheet
-  Design tokens sourced from design-system/kubernetes-austin/MASTER.md
+  Cloud Native Austin — shared stylesheet
+  Design tokens sourced from design-system/cloud-native-austin/MASTER.md
   (Kubernetes blue + open-source dark/light palette, IBM Plex Sans / JetBrains Mono)
 */
 
@@ -276,6 +276,7 @@ ul, ol { padding-left: 1.25rem; color: var(--color-text-muted); }
   color: var(--color-text);
 }
 .brand svg { width: 32px; height: 32px; }
+.brand img { width: 32px; height: 32px; object-fit: contain; }
 .brand-name .region { display: block; font-family: var(--font-mono); font-weight: 500; font-size: 0.7rem; color: var(--color-text-muted); letter-spacing: 0.04em; }
 
 .nav-links {
