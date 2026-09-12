@@ -248,6 +248,25 @@ ul, ol { padding-left: 1.25rem; color: var(--color-text-muted); }
 .btn-block { width: 100%; }
 
 /* ---------- Header ---------- */
+.site-banner {
+  background: var(--color-primary-soft);
+  border-bottom: 1px solid var(--color-border);
+}
+.site-banner .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-1) var(--space-2);
+  padding-block: var(--space-3);
+}
+.site-banner p {
+  margin: 0;
+  font-size: 0.9rem;
+  text-align: center;
+  color: var(--color-primary-dark);
+}
+.site-banner a { color: inherit; text-decoration: underline; font-weight: 600; }
+
 .site-header {
   position: sticky;
   top: 0;
