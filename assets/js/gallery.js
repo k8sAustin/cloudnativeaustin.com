@@ -42,15 +42,17 @@
   }
 
   function render(root, photos, source) {
+    var compact = root.hasAttribute('data-gallery-compact');
     var years = unique(photos.map(function (photo) { return photo.year; }));
     var albums = unique(photos.map(function (photo) { return photo.album; }));
-    var filterKey = years.length > 1 ? 'year' : (albums.length > 1 ? 'album' : '');
+    var filterKey = compact ? '' : (years.length > 1 ? 'year' : (albums.length > 1 ? 'album' : ''));
     var filterValue = 'all';
     var index = 0;
     var paused = reducedMotion;
     var timer = null;
 
     root.classList.add('gallery');
+    if (compact) root.classList.add('gallery--compact');
     root.setAttribute('aria-roledescription', 'carousel');
     root.setAttribute('aria-label', 'Meetup photos');
 
@@ -246,7 +248,7 @@
       else start();
     });
 
-    if (source) {
+    if (source && !compact) {
       var credit = document.createElement('p');
       credit.className = 'gallery-credit';
       var link = document.createElement('a');
@@ -259,7 +261,8 @@
     }
 
     buildFilters();
-    buildThumbs();
+    if (!compact) buildThumbs();
+    else thumbs.hidden = true;
     setPauseState();
     show(0);
     start();

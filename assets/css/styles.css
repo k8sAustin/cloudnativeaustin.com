@@ -689,3 +689,19 @@ ul, ol { padding-left: 1.25rem; color: var(--color-text-muted); }
 .gallery-credit { margin: 0; font-size: 0.9rem; }
 .gallery-credit a { color: var(--color-primary); }
 .gallery-more { margin-top: var(--space-6); }
+
+.gallery-home {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 420px);
+  gap: var(--space-7);
+  align-items: center;
+}
+@media (max-width: 800px) {
+  .gallery-home { grid-template-columns: 1fr; }
+}
+.gallery--compact { gap: var(--space-3); }
+.gallery--compact .gallery-stage {
+  aspect-ratio: 4 / 3;
+  max-height: 280px;
+}
+.gallery--compact .gallery-caption { font-size: 0.95rem; }
