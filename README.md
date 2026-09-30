@@ -8,12 +8,23 @@ Static HTML/CSS/JS — no build step, no framework, deploys straight to Netlify.
 
 | Page | Purpose |
 |---|---|
-| `index.html` | Landing page — hero, about, core values, sponsors preview, CFP teaser |
+| `index.html` | Landing page — hero, about, core values, sponsors preview, photo slideshow, CFP teaser |
+| `photos.html` | Meetup photo slideshow, synced from the public Google Drive album |
 | `register.html` | How to RSVP (via Meetup.com), what to expect, venue/host info, FAQ |
 | `sponsors.html` | Sponsorship model (at-cost, vendor-neutral) and current sponsors |
 | `cfp.html` | Call for Papers — tracks, review process, submission link (Sessionize) |
 | `code-of-conduct.html` | CNCF Code of Conduct summary and reporting info |
 | `404.html` | Not-found page |
+
+## Meetup photos
+
+`photos.html` and the homepage slideshow read `assets/data/photos.json`. That file is generated from the public [WebsitePhotos](https://drive.google.com/drive/folders/1STwCxIGnr3bK4C-loC-7z-_Oum3KE7c-) Google Drive folder, including subfolders for past events or years. Refresh it with:
+
+```bash
+python3 scripts/sync-drive-photos.py
+```
+
+GitHub Actions checks the album four times a day. When pictures change, it commits the new list and runs the same Pages deploy used for every other update. The folder must stay shared as “Anyone with the link.”
 
 ## Local development
 
@@ -31,8 +42,14 @@ Brand color is Kubernetes blue (`#326CE5`); typography is IBM Plex Sans / JetBra
 
 ## Deployment
 
-Hosted on **GitHub Pages** (`main` branch, root). `.nojekyll` disables Jekyll processing so
-plain static files (and dotfiles/underscore-prefixed files) are served as-is.
+Hosted on **GitHub Pages** at [cloudnativeaustin.com](https://cloudnativeaustin.com/).
+`.github/workflows/deploy.yml` publishes the site on every push to `main`.
+`.github/workflows/sync-photos.yml` publishes again when the meetup photo album changes.
+A push made by that photo job does not start the normal deploy workflow, so the photo job
+deploys the site itself.
+
+`.nojekyll` disables Jekyll processing so plain static files (and dotfiles/underscore-prefixed
+files) are served as-is.
 
 Short links used in past talks and marketing materials (`/slack`, `/meetup`, `/present`, past
 event links, etc.) are preserved as static redirect-stub folders at the repo root — e.g.
