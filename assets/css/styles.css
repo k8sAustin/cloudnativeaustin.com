@@ -294,8 +294,13 @@ ul, ol { padding-left: 1.25rem; color: var(--color-text-muted); }
   text-decoration: none;
   color: var(--color-text);
 }
-.brand svg { width: 40px; height: 40px; }
-.brand img { width: 40px; height: 40px; object-fit: contain; }
+.brand svg,
+.brand img {
+  width: clamp(2.75rem, 4.5vw, 3.4rem);
+  height: clamp(2.75rem, 4.5vw, 3.4rem);
+  object-fit: contain;
+  flex: none;
+}
 .brand-name .region { display: block; font-family: var(--font-mono); font-weight: 500; font-size: 0.7rem; color: var(--color-text-muted); letter-spacing: 0.04em; }
 
 .nav-links {
@@ -386,7 +391,20 @@ ul, ol { padding-left: 1.25rem; color: var(--color-text-muted); }
 }
 @media (max-width: 900px) { .hero-grid { grid-template-columns: 1fr; } }
 
+.hero-lockup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-4);
+  margin-bottom: var(--space-4);
+}
+.hero-lockup h1 { margin: 0; }
+.hero-logo {
+  width: clamp(5.25rem, 14vw, 8.2rem);
+  height: auto;
+}
 .hero h1 { margin-bottom: var(--space-4); }
+.not-found .hero-logo { margin-inline: auto; margin-bottom: var(--space-5); }
 .hero-lede { font-size: 1.15rem; max-width: 52ch; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: var(--space-3); margin-top: var(--space-6); }
 
