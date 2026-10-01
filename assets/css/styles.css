@@ -469,19 +469,65 @@ ul, ol { padding-left: 1.25rem; color: var(--color-text-muted); }
 .tag--gold { background: var(--color-gold-soft); color: var(--color-gold); border-color: transparent; }
 
 /* ---------- Sponsor logos ---------- */
-.sponsor-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: var(--space-4); }
+.sponsor-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-4); }
 .sponsor-card {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: var(--space-2);
-  padding: var(--space-5);
+  gap: var(--space-3);
+  padding: var(--space-4);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
   background: var(--color-surface);
 }
-.sponsor-wordmark { font-family: var(--font-mono); font-weight: 600; font-size: 1.1rem; }
+.sponsor-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 6.5rem;
+  padding: var(--space-3) var(--space-4);
+  background: #ffffff;
+  border-radius: var(--radius-md);
+}
+.sponsor-logo--on-dark { background: #000000; }
+.sponsor-logo img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
 .sponsor-role { font-size: 0.8rem; color: var(--color-text-muted); }
+.sponsor-qr {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  width: fit-content;
+  margin-top: var(--space-5);
+  padding: var(--space-2) var(--space-4) var(--space-2) var(--space-2);
+  background: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  color: #142033;
+  text-decoration: none;
+}
+.sponsor-qr img {
+  width: 7.5rem;
+  height: 7.5rem;
+  padding: 0.45rem;
+  background: #ffffff;
+  border-radius: var(--radius-sm);
+}
+.sponsor-qr span {
+  font-weight: 600;
+  font-size: 0.95rem;
+  line-height: 1.3;
+  max-width: 9rem;
+  color: #142033;
+}
+.sponsor-qr:hover { border-color: var(--color-primary); }
 
 /* ---------- CTA band ---------- */
 .cta-band {
