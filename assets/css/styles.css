@@ -469,35 +469,37 @@ ul, ol { padding-left: 1.25rem; color: var(--color-text-muted); }
 .tag--gold { background: var(--color-gold-soft); color: var(--color-gold); border-color: transparent; }
 
 /* ---------- Sponsor logos ---------- */
-.sponsor-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-4); }
+.sponsor-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: var(--space-4); }
 .sponsor-card {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: stretch;
   gap: var(--space-3);
+  min-width: 0;
   padding: var(--space-4);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
   background: var(--color-surface);
 }
 .sponsor-logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  place-items: center;
   width: 100%;
-  height: 6.5rem;
-  padding: var(--space-3) var(--space-4);
+  height: 8.5rem;
+  padding: 1rem 1.15rem;
   background: #ffffff;
   border-radius: var(--radius-md);
+  overflow: hidden;
 }
 .sponsor-logo--on-dark { background: #000000; }
 .sponsor-logo img {
   display: block;
-  max-width: 100%;
-  max-height: 100%;
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
   object-fit: contain;
+  object-position: center;
 }
 .sponsor-role { font-size: 0.8rem; color: var(--color-text-muted); }
 .sponsor-qr {
