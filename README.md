@@ -8,9 +8,9 @@ Static HTML/CSS/JS — no build step, no framework, deploys straight to Netlify.
 
 | Page | Purpose |
 |---|---|
-| `index.html` | Landing page — hero, about, core values, sponsors preview, photo slideshow, CFP teaser |
+| `index.html` | Landing page — hero, about, core values, organizers, sponsors preview, photo slideshow, CFP teaser |
 | `photos.html` | Meetup photo slideshow, synced from the public Google Drive album |
-| `register.html` | How to RSVP (via Meetup.com), what to expect, venue/host info, FAQ |
+| `register.html` | How to RSVP (via the CNCF community group), what to expect, venue/host info, FAQ |
 | `sponsors.html` | Sponsorship model (at-cost, vendor-neutral) and current sponsors |
 | `cfp.html` | Call for Papers — tracks, review process, submission link (Sessionize) |
 | `code-of-conduct.html` | CNCF Code of Conduct summary and reporting info |

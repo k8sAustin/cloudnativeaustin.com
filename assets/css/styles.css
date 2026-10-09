@@ -771,3 +771,58 @@ ul, ol { padding-left: 1.25rem; color: var(--color-text-muted); }
   max-height: 280px;
 }
 .gallery--compact .gallery-caption { font-size: 0.95rem; }
+
+/* ---------- Organizers ---------- */
+#organizers { scroll-margin-top: 5.5rem; }
+.organizer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+  gap: var(--space-4);
+}
+.organizer-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-width: 0;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  transition: transform var(--duration-base) var(--ease-standard), box-shadow var(--duration-base) var(--ease-standard), border-color var(--duration-base);
+}
+.organizer-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border-color: var(--color-primary); }
+.organizer-photo {
+  width: 96px;
+  height: 96px;
+  border-radius: var(--radius-full);
+  object-fit: cover;
+  object-position: center 20%;
+  margin-bottom: var(--space-4);
+  background: var(--color-surface-alt);
+}
+.organizer-card h3 { margin-bottom: var(--space-1); font-size: 1.1rem; }
+.organizer-role {
+  margin: 0 0 var(--space-1);
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+.organizer-company {
+  margin: 0 0 var(--space-3);
+  font-size: 0.85rem;
+}
+.organizer-card > p:last-of-type { font-size: 0.92rem; }
+.organizer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-top: auto;
+  padding-top: var(--space-3);
+}
+.organizer-links a {
+  color: var(--color-primary);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+.organizer-links a:hover { text-decoration: underline; }
