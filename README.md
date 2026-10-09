@@ -51,7 +51,7 @@ deploys the site itself.
 `.nojekyll` disables Jekyll processing so plain static files (and dotfiles/underscore-prefixed
 files) are served as-is.
 
-Short links used in past talks and marketing materials (`/slack`, `/meetup`, `/present`, past
+Short links used in past talks and marketing materials (`/slack`, `/meetup`, `/event`, `/present`, past
 event links, etc.) are preserved as static redirect-stub folders at the repo root — e.g.
 `slack/index.html` meta-refreshes to the real destination. Add a new one the same way when a
 new short link is needed. `_redirects` is also kept around for Netlify compatibility if this
