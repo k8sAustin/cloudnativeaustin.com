@@ -22,7 +22,7 @@
 
 <div class="site-banner">
   <div class="container">
-    <p>This is the new Cloud Native Austin website. <a href="https://ocgroups.dev/cncf/group/3up7rjk" target="_blank" rel="noopener">Visit the old site</a>.</p>
+    <p>This is the new Cloud Native Austin website. <a href="https://deploy-preview-7--k8saustin.netlify.app/" target="_blank" rel="noopener">Visit the old site</a>.</p>
   </div>
 </div>
 
@@ -57,17 +57,15 @@
 <main id="main">
 
   <section class="hero">
-    <div class="container hero-grid">
-      <div>
+    <div class="container hero-banner">
+      <img class="hero-logo" src="assets/img/logo-mark.png" alt="" width="512" height="512">
+      <div class="hero-copy">
         <span class="eyebrow">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
           Official CNCF Community Group
         </span>
-        <div class="hero-lockup">
-          <img class="hero-logo" src="assets/img/logo-mark.png" alt="" width="512" height="512">
-          <h1>The Cloud Native Hub of the Silicon Hills</h1>
-        </div>
-        <p class="hero-lede">Cloud Native Austin brings together practitioners — from individual contributors to CTOs — for free, production-grade talks on Kubernetes and the wider cloud native ecosystem. No sales pitches. Just real architecture, real war stories, and a community that grows together.</p>
+        <h1>The Cloud Native Hub of the Silicon Hills</h1>
+        <p class="hero-lede">Pull up a chair. We're Austin engineers — from individual contributors to CTOs — who get together for free talks on Kubernetes and the rest of the cloud native stack. No sales pitches. Just the people who run this in production, swapping war stories and helping each other out.</p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="register.html">
             RSVP for the next meetup
@@ -82,100 +80,30 @@
           <div class="stat"><div class="stat-value">100%</div><div class="stat-label">Vendor-neutral content</div></div>
         </div>
       </div>
-      <div class="hero-card" data-reveal>
-        <div class="terminal-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
-        <p class="mono" style="color: var(--color-text); margin-bottom: var(--space-3);">$ kubectl get community -n austin</p>
-        <p class="mono" style="margin-bottom: 0;">
-          NAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;STATUS&nbsp;&nbsp;&nbsp;MEMBERS<br>
-          k8s-austin&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Active&nbsp;&nbsp;&nbsp;&nbsp;470+<br><br>
-          $ kubectl describe group k8s-austin<br>
-          Region: Central Texas<br>
-          Cost: Free<br>
-          Vendor-Neutral: true<br>
-          CodeOfConduct: cncf<br>
-          NextEvent: <a href="event/" target="_blank" rel="noopener" style="color: var(--color-primary);">RSVP →</a>
-        </p>
+      <div class="hero-photos" id="photos">
+        <span class="eyebrow">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h3l2-3h6l2 3h3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2Z"/><circle cx="12" cy="13" r="3.5"/></svg>
+          From the meetups
+        </span>
+        <h2>In the room</h2>
+        <p>This is us. A few pictures from recent nights — the talks, the hallway, and the people who make it worth showing up.</p>
+        <div data-gallery data-gallery-feature></div>
+        <a class="btn btn-outline" href="photos.html">Browse all photos</a>
       </div>
     </div>
   </section>
 
-  <section class="section section--tight">
-    <div class="container">
-      <p class="mono" style="text-align:center; color: var(--color-text-muted); font-size: 0.85rem; margin-bottom: var(--space-4);">Find us across the community</p>
-      <ul class="social-icons">
-        <li><a href="https://youtube.com/@k8sAustin" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.8 15.5v-7L16 12l-6.2 3.5z"/></svg></a></li>
-        <li><a href="https://linkedin.com/company/k8sAustin" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.4V9h3.4v1.6h.1c.5-.9 1.6-1.9 3.4-1.9 3.6 0 4.3 2.4 4.3 5.5v6.3zM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2zM7.1 20.5H3.6V9h3.5v11.5zM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6C0 23.2.8 24 1.8 24h20.4c1 0 1.8-.8 1.8-1.7V1.7C24 .8 23.2 0 22.2 0z"/></svg></a></li>
-        <li><a href="https://x.com/K8sAustin" target="_blank" rel="noopener" aria-label="X / Twitter"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.2 2.3h3.3l-7.2 8.3L23 21.8h-6.1l-4.8-6.2-5.4 6.2H3.4l7.7-8.8L1.3 2.3h6.2l4.3 5.7 6.4-5.7zm-1.2 17.5h1.8L7.1 4.1H5.1l11.9 15.7z"/></svg></a></li>
-        <li><a href="https://instagram.com/k8sAustin" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2.2c3.2 0 3.6 0 4.8.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 3.3-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-3.3-.1-4.8-1.7-4.9-4.9-.1-1.3-.1-1.6-.1-4.8s0-3.6.1-4.8c.1-3.2 1.7-4.8 4.9-4.9 1.2-.1 1.6-.1 4.8-.1zM12 0C8.7 0 8.3 0 7.1.1 2.7.3.3 2.7.1 7.1 0 8.3 0 8.7 0 12s0 3.7.1 4.9c.2 4.4 2.6 6.8 7 7 1.2.1 1.6.1 4.9.1s3.7 0 4.9-.1c4.4-.2 6.8-2.6 7-7 .1-1.2.1-1.6.1-4.9s0-3.7-.1-4.9c-.2-4.4-2.6-6.8-7-7C15.7 0 15.3 0 12 0zm0 5.8a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 0 0 0-12.4zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.8a1.4 1.4 0 1 0 0 2.9 1.4 1.4 0 0 0 0-2.9z"/></svg></a></li>
-        <li><a href="https://github.com/k8sAustin" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .5A11.5 11.5 0 0 0 .5 12.3c0 5.2 3.4 9.6 8.1 11.2.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.5-1.4-1.3-1.8-1.3-1.8-1.1-.8.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.3.5-2.4 1.2-3.3-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.7.2 2.9.1 3.2.8.9 1.2 2 1.2 3.3 0 4.7-2.8 5.7-5.5 6 .4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg></a></li>
-        <li><a href="https://bsky.app/profile/k8saustin.com" target="_blank" rel="noopener" aria-label="Bluesky"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M5.4 2.2C8.1 4.1 10.6 7.4 12 9.6c1.4-2.2 3.9-5.5 6.6-7.4 1.9-1.3 5-2.3 5 1.6 0 .8-.4 6.7-.7 7.7-.9 3.2-4.2 4-7.1 3.5 5.1.9 6.4 3.8 3.6 6.7-5.3 5.4-7.6-1.4-8.2-3.1-.1-.3-.2-.5-.2-.5s-.1.2-.2.5c-.6 1.7-2.9 8.5-8.2 3.1-2.8-2.9-1.5-5.8 3.6-6.7-2.9.5-6.2-.3-7.1-3.5-.3-1-.7-6.9-.7-7.7 0-3.9 3.1-2.9 5-1.6z"/></svg></a></li>
-        <li><a href="https://cloud-native.social/@k8saustin" target="_blank" rel="noopener" aria-label="Mastodon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21.3 8.2c0-4.4-2.9-5.7-2.9-5.7C17 1.6 14.5 1.3 12 1.3h-.1C9.4 1.3 6.9 1.6 5.6 2.5c0 0-2.9 1.3-2.9 5.7 0 1 0 2.2 0 3.5.1 4.3.8 8.6 4.8 9.6 1.8.5 3.4.6 4.7.5 2.3-.1 3.6-.8 3.6-.8l-.1-1.7s-1.6.5-3.5.5c-1.8 0-3.8-.2-4.1-2.4 0-.2 0-.5 0-.6s1.8.4 4.1.5c1.4.1 2.7-.1 4-.2 2.6-.3 4.8-1.9 5.1-3.3.4-2.3.4-5.5.4-5.5zM17.9 13.9h-2.1V9.1c0-1.1-.5-1.6-1.4-1.6-1 0-1.5.7-1.5 2v2.8h-2.1V9.4c0-1.3-.5-2-1.5-2s-1.4.6-1.4 1.6v4.8H6.1V9c0-1.1.3-2 .8-2.6.6-.6 1.3-1 2.3-1 1.1 0 1.9.4 2.4 1.2l.4.7.4-.7c.5-.8 1.4-1.2 2.4-1.2 1 0 1.7.3 2.3 1 .6.6.8 1.5.8 2.6v4.9z"/></svg></a></li>
-        <li><a href="https://communityinviter.com/apps/cloud-native/cncf" target="_blank" rel="noopener" aria-label="Slack"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6 15a2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2h2v2zm1 0a2 2 0 0 1 2-2 2 2 0 0 1 2 2v5a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-5zM9 6a2 2 0 0 1-2-2 2 2 0 0 1 2-2 2 2 0 0 1 2 2v2H9zm0 1a2 2 0 0 1 2 2 2 2 0 0 1-2 2H4a2 2 0 0 1-2-2 2 2 0 0 1 2-2h5zm9 2a2 2 0 0 1 2-2 2 2 0 0 1 2 2 2 2 0 0 1-2 2h-2V9zm-1 0a2 2 0 0 1-2 2 2 2 0 0 1-2-2V4a2 2 0 0 1 2-2 2 2 0 0 1 2 2v5zm-2 9a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2v-2h2zm0-1a2 2 0 0 1-2-2 2 2 0 0 1 2-2h5a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-5z"/></svg></a></li>
-        <li><a href="https://ocgroups.dev/cncf/group/3up7rjk" target="_blank" rel="noopener" aria-label="CNCF group"><img src="assets/img/logo-mark.png" alt="" width="20" height="20"></a></li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="section section--alt" id="about">
-    <div class="container">
-      <div class="grid hero-grid">
-        <div>
-          <span class="eyebrow">About the group</span>
-          <h2>Practitioners solving hard production problems, together</h2>
-          <p>Whether you're navigating complex, multi-cluster architectures at enterprise scale, or you're an engineer deepening your foundational cloud native expertise — this is your community. We trade architectural insights and solve hard production problems in a friendly, inclusive environment where you can ask tough questions or share exactly what you're building with peers.</p>
-          <p>Our mission is to elevate the local ecosystem by hosting production-grade technical talks. We welcome speakers from every background, provided they bring engineering depth rather than sales pitches — whether you're a CNCF maintainer or a local engineer with a war story to share.</p>
-          <a class="btn btn-outline" href="cfp.html">Read our speaker guidelines</a>
-        </div>
-        <ul class="check-list" data-reveal>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Free, open meetups — every skill level welcome</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Demo-focused, architecture-first talks — not sales pitches</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> A Program Committee that mentors first-time speakers</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Governed by the CNCF Code of Conduct</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Recent talks: AI infrastructure, GitOps, security hardening, observability</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="values">
+  <section class="section" id="linkedin">
     <div class="container">
       <div class="section-heading">
-        <span class="eyebrow">Our operating principles</span>
-        <h2>Core values &amp; operating principles</h2>
-        <p>Five commitments that shape every meetup, every sponsorship conversation, and every accepted talk.</p>
+        <span class="eyebrow">
+          <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.4V9h3.4v1.6h.1c.5-.9 1.6-1.9 3.4-1.9 3.6 0 4.3 2.4 4.3 5.5v6.3zM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2zM7.1 20.5H3.6V9h3.5z"/></svg>
+          From the company page
+        </span>
+        <h2>On LinkedIn</h2>
+        <p>Recent posts from Cloud Native Austin. Newer notes appear first.</p>
       </div>
-      <div class="grid grid-3">
-        <article class="card" data-reveal>
-          <span class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.4 8.4 8 9 4.6-.6 8-4 8-9V6l-8-3Z"/></svg></span>
-          <h3>Vendor-Neutral Excellence</h3>
-          <p>We prioritize demo-focused, architectural deep-dives over product pitches. Every session is vetted against our technical standards for high-value, transferable knowledge.</p>
-        </article>
-        <article class="card" data-reveal>
-          <span class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0"/></svg></span>
-          <h3>Open Access, High Standards</h3>
-          <p>Our meetups are FREE and open to all. Top-tier content should be accessible to everyone, regardless of budget.</p>
-        </article>
-        <article class="card" data-reveal>
-          <span class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M2 20c0-3.3 3.1-6 7-6s7 2.7 7 6"/><circle cx="17.5" cy="9" r="2.3"/><path d="M16 20c.2-2.4 1.9-4.3 4-4.9"/></svg></span>
-          <h3>Community Mentorship</h3>
-          <p>We don't just book expert speakers — we build them. Our content review process helps local engineers refine proposals into world-class talks.</p>
-        </article>
-        <article class="card" data-reveal>
-          <span class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 12 3 3 5-6"/><rect x="3" y="4" width="18" height="16" rx="2"/></svg></span>
-          <h3>Transparent Sponsorship</h3>
-          <p>Sponsorships are strictly at-cost to cover venue and food — never a markup — so we never price out smaller innovators or open-source vendors.</p>
-        </article>
-        <article class="card" data-reveal>
-          <span class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18M5 7l7-4 7 4M3 21h18M5 7l-2 6h4l-2-6Zm14 0l-2 6h4l-2-6Z"/></svg></span>
-          <h3>Democratized Operations</h3>
-          <p>Our Program Committee governs session selection, but our broader operations are fully open — anyone who wants to help run events or source sponsors is welcome.</p>
-        </article>
-        <article class="card" data-reveal>
-          <span class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10Z"/></svg></span>
-          <h3>Join the discussion</h3>
-          <p>Connect between meetups on the official CNCF Slack, channel <span class="mono">#austin-community-group</span> — share patterns, jobs, and ideas for future sessions.</p>
-        </article>
-      </div>
+      <div data-linkedin></div>
     </div>
   </section>
 
@@ -184,7 +112,7 @@
       <div class="section-heading">
         <span class="eyebrow">The team</span>
         <h2>Organizers</h2>
-        <p>The volunteers who run Cloud Native Austin. Profiles are the ones published on our <a href="https://ocgroups.dev/cncf/group/3up7rjk" target="_blank" rel="noopener">CNCF community group</a>.</p>
+        <p>The volunteers you'll meet at the door, on Slack, and usually near the food. Profiles match the ones on our <a href="https://ocgroups.dev/cncf/group/3up7rjk" target="_blank" rel="noopener">CNCF community group</a>.</p>
       </div>
       <div class="organizer-grid">
         <article class="organizer-card">
@@ -249,6 +177,87 @@
     </div>
   </section>
 
+
+  <section class="section section--tight">
+    <div class="container">
+      <p class="mono" style="text-align:center; color: var(--color-text-muted); font-size: 0.85rem; margin-bottom: var(--space-4);">Find us across the community</p>
+      <ul class="social-icons">
+        <li><a href="https://youtube.com/@k8sAustin" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.8 15.5v-7L16 12l-6.2 3.5z"/></svg></a></li>
+        <li><a href="https://linkedin.com/company/k8sAustin" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.4V9h3.4v1.6h.1c.5-.9 1.6-1.9 3.4-1.9 3.6 0 4.3 2.4 4.3 5.5v6.3zM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2zM7.1 20.5H3.6V9h3.5v11.5zM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6C0 23.2.8 24 1.8 24h20.4c1 0 1.8-.8 1.8-1.7V1.7C24 .8 23.2 0 22.2 0z"/></svg></a></li>
+        <li><a href="https://x.com/K8sAustin" target="_blank" rel="noopener" aria-label="X / Twitter"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.2 2.3h3.3l-7.2 8.3L23 21.8h-6.1l-4.8-6.2-5.4 6.2H3.4l7.7-8.8L1.3 2.3h6.2l4.3 5.7 6.4-5.7zm-1.2 17.5h1.8L7.1 4.1H5.1l11.9 15.7z"/></svg></a></li>
+        <li><a href="https://instagram.com/k8sAustin" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2.2c3.2 0 3.6 0 4.8.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 3.3-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-3.3-.1-4.8-1.7-4.9-4.9-.1-1.3-.1-1.6-.1-4.8s0-3.6.1-4.8c.1-3.2 1.7-4.8 4.9-4.9 1.2-.1 1.6-.1 4.8-.1zM12 0C8.7 0 8.3 0 7.1.1 2.7.3.3 2.7.1 7.1 0 8.3 0 8.7 0 12s0 3.7.1 4.9c.2 4.4 2.6 6.8 7 7 1.2.1 1.6.1 4.9.1s3.7 0 4.9-.1c4.4-.2 6.8-2.6 7-7 .1-1.2.1-1.6.1-4.9s0-3.7-.1-4.9c-.2-4.4-2.6-6.8-7-7C15.7 0 15.3 0 12 0zm0 5.8a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 0 0 0-12.4zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.8a1.4 1.4 0 1 0 0 2.9 1.4 1.4 0 0 0 0-2.9z"/></svg></a></li>
+        <li><a href="https://github.com/k8sAustin" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .5A11.5 11.5 0 0 0 .5 12.3c0 5.2 3.4 9.6 8.1 11.2.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.5-1.4-1.3-1.8-1.3-1.8-1.1-.8.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.3.5-2.4 1.2-3.3-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.7.2 2.9.1 3.2.8.9 1.2 2 1.2 3.3 0 4.7-2.8 5.7-5.5 6 .4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg></a></li>
+        <li><a href="https://bsky.app/profile/k8saustin.com" target="_blank" rel="noopener" aria-label="Bluesky"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M5.4 2.2C8.1 4.1 10.6 7.4 12 9.6c1.4-2.2 3.9-5.5 6.6-7.4 1.9-1.3 5-2.3 5 1.6 0 .8-.4 6.7-.7 7.7-.9 3.2-4.2 4-7.1 3.5 5.1.9 6.4 3.8 3.6 6.7-5.3 5.4-7.6-1.4-8.2-3.1-.1-.3-.2-.5-.2-.5s-.1.2-.2.5c-.6 1.7-2.9 8.5-8.2 3.1-2.8-2.9-1.5-5.8 3.6-6.7-2.9.5-6.2-.3-7.1-3.5-.3-1-.7-6.9-.7-7.7 0-3.9 3.1-2.9 5-1.6z"/></svg></a></li>
+        <li><a href="https://cloud-native.social/@k8saustin" target="_blank" rel="noopener" aria-label="Mastodon"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M21.3 8.2c0-4.4-2.9-5.7-2.9-5.7C17 1.6 14.5 1.3 12 1.3h-.1C9.4 1.3 6.9 1.6 5.6 2.5c0 0-2.9 1.3-2.9 5.7 0 1 0 2.2 0 3.5.1 4.3.8 8.6 4.8 9.6 1.8.5 3.4.6 4.7.5 2.3-.1 3.6-.8 3.6-.8l-.1-1.7s-1.6.5-3.5.5c-1.8 0-3.8-.2-4.1-2.4 0-.2 0-.5 0-.6s1.8.4 4.1.5c1.4.1 2.7-.1 4-.2 2.6-.3 4.8-1.9 5.1-3.3.4-2.3.4-5.5.4-5.5zM17.9 13.9h-2.1V9.1c0-1.1-.5-1.6-1.4-1.6-1 0-1.5.7-1.5 2v2.8h-2.1V9.4c0-1.3-.5-2-1.5-2s-1.4.6-1.4 1.6v4.8H6.1V9c0-1.1.3-2 .8-2.6.6-.6 1.3-1 2.3-1 1.1 0 1.9.4 2.4 1.2l.4.7.4-.7c.5-.8 1.4-1.2 2.4-1.2 1 0 1.7.3 2.3 1 .6.6.8 1.5.8 2.6v4.9z"/></svg></a></li>
+        <li><a href="https://communityinviter.com/apps/cloud-native/cncf" target="_blank" rel="noopener" aria-label="Slack"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6 15a2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2h2v2zm1 0a2 2 0 0 1 2-2 2 2 0 0 1 2 2v5a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-5zM9 6a2 2 0 0 1-2-2 2 2 0 0 1 2-2 2 2 0 0 1 2 2v2H9zm0 1a2 2 0 0 1 2 2 2 2 0 0 1-2 2H4a2 2 0 0 1-2-2 2 2 0 0 1 2-2h5zm9 2a2 2 0 0 1 2-2 2 2 0 0 1 2 2 2 2 0 0 1-2 2h-2V9zm-1 0a2 2 0 0 1-2 2 2 2 0 0 1-2-2V4a2 2 0 0 1 2-2 2 2 0 0 1 2 2v5zm-2 9a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2v-2h2zm0-1a2 2 0 0 1-2-2 2 2 0 0 1 2-2h5a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-5z"/></svg></a></li>
+        <li><a href="https://ocgroups.dev/cncf/group/3up7rjk" target="_blank" rel="noopener" aria-label="CNCF group"><img src="assets/img/logo-mark.png" alt="" width="20" height="20"></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="about">
+    <div class="container">
+      <div class="grid hero-grid">
+        <div>
+          <span class="eyebrow">About the group</span>
+          <h2>Practitioners solving hard production problems, together</h2>
+          <p>Whether you're running multi-cluster platforms at enterprise scale or still getting comfortable with the basics, you belong here. Ask the hard question. Show what you're building. Someone in the room has probably been there, and they'll tell you what actually worked.</p>
+          <p>Our mission is to elevate the local ecosystem by hosting production-grade technical talks. We welcome speakers from every background, provided they bring engineering depth rather than sales pitches — whether you're a CNCF maintainer or a local engineer with a war story to share.</p>
+          <a class="btn btn-outline" href="cfp.html">Read our speaker guidelines</a>
+        </div>
+        <ul class="check-list" data-reveal>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Free, open meetups — every skill level welcome</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Demo-focused, architecture-first talks — not sales pitches</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> A Program Committee that mentors first-time speakers</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Governed by the CNCF Code of Conduct</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Recent talks: AI infrastructure, GitOps, security hardening, observability</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="values">
+    <div class="container">
+      <div class="section-heading">
+        <span class="eyebrow">Our operating principles</span>
+        <h2>Core values &amp; operating principles</h2>
+        <p>Five commitments that shape every meetup, every sponsorship conversation, and every accepted talk.</p>
+      </div>
+      <div class="grid grid-3">
+        <article class="card" data-reveal>
+          <span class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.4 8.4 8 9 4.6-.6 8-4 8-9V6l-8-3Z"/></svg></span>
+          <h3>Vendor-Neutral Excellence</h3>
+          <p>We prioritize demo-focused, architectural deep-dives over product pitches. Every session is vetted against our technical standards for high-value, transferable knowledge.</p>
+        </article>
+        <article class="card" data-reveal>
+          <span class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0"/></svg></span>
+          <h3>Open Access, High Standards</h3>
+          <p>Our meetups are FREE and open to all. Top-tier content should be accessible to everyone, regardless of budget.</p>
+        </article>
+        <article class="card" data-reveal>
+          <span class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M2 20c0-3.3 3.1-6 7-6s7 2.7 7 6"/><circle cx="17.5" cy="9" r="2.3"/><path d="M16 20c.2-2.4 1.9-4.3 4-4.9"/></svg></span>
+          <h3>Community Mentorship</h3>
+          <p>We don't just book expert speakers — we build them. Our content review process helps local engineers refine proposals into world-class talks.</p>
+        </article>
+        <article class="card" data-reveal>
+          <span class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 12 3 3 5-6"/><rect x="3" y="4" width="18" height="16" rx="2"/></svg></span>
+          <h3>Transparent Sponsorship</h3>
+          <p>Sponsorships are strictly at-cost to cover venue and food — never a markup — so we never price out smaller innovators or open-source vendors.</p>
+        </article>
+        <article class="card" data-reveal>
+          <span class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18M5 7l7-4 7 4M3 21h18M5 7l-2 6h4l-2-6Zm14 0l-2 6h4l-2-6Z"/></svg></span>
+          <h3>Democratized Operations</h3>
+          <p>Our Program Committee governs session selection, but our broader operations are fully open — anyone who wants to help run events or source sponsors is welcome.</p>
+        </article>
+        <article class="card" data-reveal>
+          <span class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10Z"/></svg></span>
+          <h3>Join the discussion</h3>
+          <p>Connect between meetups on the official CNCF Slack, channel <span class="mono">#austin-community-group</span> — share patterns, jobs, and ideas for future sessions.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
   <section class="section" id="sponsors-preview">
     <div class="container">
       <div class="section-heading">
@@ -279,21 +288,6 @@
         </div>
       </div>
       <p style="margin-top: var(--space-6);"><a class="btn btn-outline" href="sponsors.html">Become a sponsor</a></p>
-    </div>
-  </section>
-
-  <section class="section section--tight" id="photos">
-    <div class="container gallery-home">
-      <div>
-        <span class="eyebrow">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h3l2-3h6l2 3h3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2Z"/><circle cx="12" cy="13" r="3.5"/></svg>
-          From the meetups
-        </span>
-        <h2>In the room</h2>
-        <p>A few pictures from recent Cloud Native Austin meetups.</p>
-        <a class="btn btn-outline" href="photos.html">Browse all photos</a>
-      </div>
-      <div data-gallery data-gallery-compact></div>
     </div>
   </section>
 
@@ -368,5 +362,6 @@
 
 <script src="assets/js/main.js"></script>
 <script src="assets/js/gallery.js"></script>
+<script src="assets/js/linkedin.js"></script>
 </body>
 </html>
