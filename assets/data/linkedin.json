@@ -1,0 +1,39 @@
+{
+  "source": "https://www.linkedin.com/company/k8sAustin",
+  "posts": [
+    {
+      "date": "2026-10-03",
+      "title": "Kubernetes Austin is becoming Cloud Native Austin",
+      "text": "Our community’s conversations have naturally expanded beyond Kubernetes to include more of the cloud native ecosystem — from platform engineering and observability to AI. It’s time our name reflected that growth. Kubernetes remains a core part of what brings us together.",
+      "url": "https://www.linkedin.com/posts/k8saustin_cloud-native-austin-linkedin-activity-7512166879369805824-gv5O",
+      "reactions": 33
+    },
+    {
+      "date": "2026-09-19",
+      "title": "Heading to KubeCon + CloudNativeCon North America",
+      "text": "Our team will be in Salt Lake City from November 9–12, joining the global cloud native community for four days of learning and connection. Whether you’re a developer, platform engineer, student, or just curious, come represent Austin with us.",
+      "url": "https://www.linkedin.com/posts/k8saustin_kubernetes-austin-is-heading-to-kubecon-activity-7507195017086554112-rqbg"
+    },
+    {
+      "date": "2026-09-17",
+      "title": "September meetup at STATION Austin",
+      "text": "Two practical sessions on September 24: Steve Fraser on what actually limits pod density in Kubernetes, and Shiva Kalyan Reddy and Nitin Garg on production guardrails for LLM applications. Food and drinks included. Thank you to STATION Austin, Cast AI, and Ardan Labs.",
+      "url": "https://www.linkedin.com/posts/k8saustin_kubernetes-cloudnative-cncf-activity-7506343550964531200-fvR-",
+      "reactions": 19
+    },
+    {
+      "date": "2026-09-06",
+      "title": "A night at the ballpark",
+      "text": "Cast AI brought the community together at Dell Diamond for the Round Rock Express game — a chance to talk cloud, Kubernetes, and platform engineering somewhere other than a meetup room.",
+      "url": "https://www.linkedin.com/posts/k8saustin_cloudnative-kubernetes-austintech-activity-7502445639184764929-lTit",
+      "reactions": 17
+    },
+    {
+      "date": "2026-08-04",
+      "title": "Thank you for the July meetup",
+      "text": "A full room for multi-cloud data pipelines and AI and privacy, both through a Kubernetes lens. Thank you to speakers Goutam Tadi and Keerthana Shanmugasundaram, and to STATION Austin, Zynga, and Ardan Labs for making the night possible.",
+      "url": "https://www.linkedin.com/posts/k8saustin_kubernetesaustin-kubernetes-cloudnative-activity-7490244798486974465-r4em",
+      "reactions": 41
+    }
+  ]
+}

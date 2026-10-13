@@ -285,10 +285,12 @@ ul, ol { padding-left: 1.25rem; color: var(--color-text-muted); }
   padding-block: var(--space-3);
 }
 
+.site-header .container { max-width: 1280px; }
 .brand {
   display: inline-flex;
   align-items: center;
   gap: var(--space-2);
+  flex: none;
   font-weight: 700;
   font-size: 1.05rem;
   text-decoration: none;
@@ -301,6 +303,7 @@ ul, ol { padding-left: 1.25rem; color: var(--color-text-muted); }
   object-fit: contain;
   flex: none;
 }
+.brand-name { white-space: nowrap; }
 .brand-name .region { display: block; font-family: var(--font-mono); font-weight: 500; font-size: 0.7rem; color: var(--color-text-muted); letter-spacing: 0.04em; }
 
 .nav-links {
@@ -353,7 +356,7 @@ ul, ol { padding-left: 1.25rem; color: var(--color-text-muted); }
 
 .nav-toggle { display: none; }
 
-@media (max-width: 1180px) {
+@media (max-width: 1320px) {
   .nav-toggle {
     display: inline-flex;
   }
@@ -378,7 +381,7 @@ ul, ol { padding-left: 1.25rem; color: var(--color-text-muted); }
 .hero {
   position: relative;
   overflow: hidden;
-  padding-block: var(--space-9) var(--space-8);
+  padding-block: var(--space-7) var(--space-6);
   background:
     radial-gradient(circle at 12% -10%, var(--color-primary-soft), transparent 55%),
     var(--color-bg);
@@ -391,20 +394,44 @@ ul, ol { padding-left: 1.25rem; color: var(--color-text-muted); }
 }
 @media (max-width: 900px) { .hero-grid { grid-template-columns: 1fr; } }
 
-.hero-lockup {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: var(--space-4);
-  margin-bottom: var(--space-4);
+.hero .container { max-width: min(94vw, 1680px); }
+.hero-banner {
+  display: grid;
+  grid-template-columns: clamp(12rem, min(30vw, 48vh), 34rem) minmax(0, 1fr);
+  grid-template-areas:
+    "logo photos"
+    "copy photos";
+  align-items: start;
+  column-gap: clamp(1.25rem, 3vw, 3rem);
+  row-gap: var(--space-4);
 }
-.hero-lockup h1 { margin: 0; }
-.hero-logo {
-  width: clamp(5.25rem, 14vw, 8.2rem);
+.hero-copy { grid-area: copy; min-width: 0; }
+.hero-photos { grid-area: photos; min-width: 0; }
+.hero-photos h2 { margin-bottom: var(--space-2); }
+.hero-photos > p { max-width: 62ch; }
+.hero-photos .btn { margin-top: var(--space-4); }
+.hero .hero-logo {
+  grid-area: logo;
+  width: 100%;
   height: auto;
 }
 .hero h1 { margin-bottom: var(--space-4); }
-.not-found .hero-logo { margin-inline: auto; margin-bottom: var(--space-5); }
+.not-found .hero-logo {
+  width: clamp(8rem, 28vw, 16rem);
+  height: auto;
+  margin-inline: auto;
+  margin-bottom: var(--space-5);
+}
+@media (max-width: 800px) {
+  .hero-banner {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "logo"
+      "photos"
+      "copy";
+  }
+  .hero .hero-logo { width: min(100%, 18rem); }
+}
 .hero-lede { font-size: 1.15rem; max-width: 52ch; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: var(--space-3); margin-top: var(--space-6); }
 
@@ -419,16 +446,6 @@ ul, ol { padding-left: 1.25rem; color: var(--color-text-muted); }
 .stat { min-width: 120px; }
 .stat-value { font-family: var(--font-mono); font-size: 1.6rem; font-weight: 700; color: var(--color-primary); }
 .stat-label { font-size: 0.85rem; color: var(--color-text-muted); }
-
-.hero-card {
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-lg);
-  padding: var(--space-6);
-  box-shadow: var(--shadow-lg);
-}
-.hero-card .terminal-bar { display: flex; gap: 6px; margin-bottom: var(--space-4); }
-.hero-card .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--color-border); }
 
 /* ---------- Cards ---------- */
 .card {
@@ -790,14 +807,9 @@ ul, ol { padding-left: 1.25rem; color: var(--color-text-muted); }
 .gallery-credit a { color: var(--color-primary); }
 .gallery-more { margin-top: var(--space-6); }
 
-.gallery-home {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(260px, 420px);
-  gap: var(--space-7);
-  align-items: center;
-}
-@media (max-width: 800px) {
-  .gallery-home { grid-template-columns: 1fr; }
+[data-gallery-feature] .gallery-stage {
+  aspect-ratio: 16 / 10;
+  max-height: min(58vh, 520px);
 }
 .gallery--compact { gap: var(--space-3); }
 .gallery--compact .gallery-stage {
@@ -805,6 +817,72 @@ ul, ol { padding-left: 1.25rem; color: var(--color-text-muted); }
   max-height: 280px;
 }
 .gallery--compact .gallery-caption { font-size: 0.95rem; }
+
+/* ---------- LinkedIn posts ---------- */
+.posts {
+  display: grid;
+  gap: var(--space-4);
+  max-width: 760px;
+}
+.post-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 18rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-sm);
+}
+.post-meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--space-2);
+  margin: 0 0 var(--space-3);
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+}
+.post-card h3 {
+  margin-bottom: var(--space-3);
+  text-wrap: balance;
+}
+.post-text {
+  margin-bottom: var(--space-4);
+  color: var(--color-text);
+  text-wrap: pretty;
+}
+.post-link {
+  margin-top: auto;
+  color: var(--color-primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+.post-link:hover { text-decoration: underline; }
+.post-dots {
+  display: flex;
+  gap: var(--space-2);
+}
+.post-dot {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 0;
+  border-radius: var(--radius-full);
+  background: transparent;
+  cursor: pointer;
+}
+.post-dot::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: var(--radius-full);
+  background: var(--color-border);
+}
+.post-dot[aria-current="true"]::before { background: var(--color-primary); width: 22px; }
 
 /* ---------- Organizers ---------- */
 #organizers { scroll-margin-top: 5.5rem; }
@@ -826,8 +904,8 @@ ul, ol { padding-left: 1.25rem; color: var(--color-text-muted); }
 }
 .organizer-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border-color: var(--color-primary); }
 .organizer-photo {
-  width: 96px;
-  height: 96px;
+  width: clamp(7.5rem, 14vw, 9.5rem);
+  height: clamp(7.5rem, 14vw, 9.5rem);
   border-radius: var(--radius-full);
   object-fit: cover;
   object-position: center 20%;
